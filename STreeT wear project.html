@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STreeT wear- Premium Clothing Brand</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loading-screen" class="loading-screen">
+    <div class="loading-content">
+      <h1>STreeT wear</h1>
+      <div class="loading-bar">
+        <div class="loading-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="custom-cursor"></div>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress">
+    <div class="scroll-bar"></div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">STreeT wear</div>
+      
+      <nav class="desktop-nav">
+        <a href="#home">Home</a>
+        <a href="#collections">Collections</a>
+        <a href="#about">About</a>
+        <a href="#new-arrivals">New Arrivals</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      
+      <div class="nav-actions">
+        <button class="cart-toggle" aria-label="Shopping cart">
+          <i class="fas fa-shopping-bag"></i>
+        </button>
+        
+        <button class="menu-toggle" aria-label="Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <div class="container">
+        <nav>
+          <a href="#home" class="mobile-link">Home</a>
+          <a href="#collections" class="mobile-link">Collections</a>
+          <a href="#about" class="mobile-link">About</a>
+          <a href="#new-arrivals" class="mobile-link">New Arrivals</a>
+          <a href="#contact" class="mobile-link">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Shopping Cart -->
+  <div class="shopping-cart">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button class="close-cart" aria-label="Close cart">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    
+    <div class="cart-items">
+      <!-- Cart items will be dynamically inserted here -->
+    </div>
+    
+    <div class="cart-footer">
+      <div class="subtotal">
+        <span>Subtotal</span>
+        <span class="subtotal-amount">$0</span>
+      </div>
+      <p class="shipping-note">Shipping and taxes calculated at checkout</p>
+      <button class="checkout-btn">Checkout</button>
+      <button class="continue-shopping">Continue Shopping</button>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="video-background">
+        <video autoplay muted loop playsinline id="hero-video">
+          <source src="https://assets.mixkit.co/videos/preview/mixkit-fashion-model-with-a-black-and-white-outfit-39880-large.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay"></div>
+      </div>
+
+      <button class="video-control" aria-label="Pause video">
+        <i class="fas fa-pause"></i>
+      </button>
+
+      <div class="hero-content">
+        <h1>STreeT wear </h1>
+        <p>Redefining modern elegance through timeless design</p>
+        <a href="#collections" class="cta-button">Explore Collection</a>
+      </div>
+    </section>
+
+    <!-- Collections Section -->
+    <section id="collections" class="collections">
+      <div class="container">
+        <div class="section-header">
+          <h2>Featured Collections</h2>
+          <p>Explore our carefully curated collections designed for the modern individual.</p>
+        </div>
+
+        <div class="collections-grid">
+          <!-- Collection items will be dynamically inserted here -->
+        </div>
+      </div>
+
+      <!-- Quick View Modal -->
+      <div class="quick-view-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+          <button class="close-modal">
+            <i class="fas fa-times"></i>
+          </button>
+          
+          <div class="modal-image">
+            <!-- Modal image will be dynamically inserted here -->
+          </div>
+          
+          <div class="modal-details">
+            <h3 class="modal-title"></h3>
+            <p class="modal-description"></p>
+            <p class="modal-extended-description"></p>
+            <button class="shop-collection-btn">Shop This Collection</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text animate-on-scroll">
+            <h2>Our Brand Story</h2>
+            <p>
+              Founded in 2020, STreeT wear was born from a passion for creating clothing that combines timeless elegance with modern sensibilities. Our journey began with a simple idea: to create pieces that empower individuals to express their unique style.
+            </p>
+            
+            <p>
+              We believe in sustainable fashion that doesn't compromise on quality or design. Each piece in our collection is thoughtfully crafted using ethically sourced materials and produced in small batches to minimize waste.
+            </p>
+            <p>
+              Our team of designers draws inspiration from global art, architecture, and culture to create distinctive collections that stand the test of time. We're not just creating clothing; we're crafting experiences and stories that resonate with our community.
+            </p>
+          </div>
+          
+          <div class="about-images animate-on-scroll">
+            <div class="image-grid">
+              <div class="image-item">
+                <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Designer working">
+              </div>
+              <div class="image-item offset">
+                <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Clothing production">
+              </div>
+              <div class="image-item">
+                <img src="https://images.unsplash.com/photo-1605289982774-9a6fef564df8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fabric selection">
+              </div>
+              <div class="image-item offset">
+                <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fashion design">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest Releases Section -->
+    <section id="new-arrivals" class="latest-releases">
+      <div class="container">
+        <div class="section-header">
+          <h2>Latest Releases</h2>
+          <p>Discover our newest arrivals, featuring cutting-edge designs and premium materials.</p>
+        </div>
+
+        <div class="products-grid">
+          <!-- Product items will be dynamically inserted here -->
+        </div>
+
+        <div class="view-all">
+          <a href="#" class="view-all-btn">View All New Arrivals</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instagram Feed Section -->
+    <section class="instagram-feed">
+      <div class="container">
+        <div class="section-header">
+          <h2>Follow Our Journey</h2>
+          <div class="instagram-handle">
+            <i class="fab fa-instagram"></i>
+            <p>@luxe_official</p>
+          </div>
+          <p>Join our community and stay updated with the latest trends, behind-the-scenes content, and exclusive offers.</p>
+        </div>
+
+        <div class="instagram-grid">
+          <!-- Instagram posts will be dynamically inserted here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+      <div class="newsletter-background">
+        <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Fashion background">
+        <div class="newsletter-overlay"></div>
+      </div>
+      
+      <div class="container">
+        <div class="newsletter-content">
+          <h2>Join Our Community</h2>
+          <p>
+            Subscribe to our newsletter and be the first to know about new collections, exclusive offers, and fashion insights.
+          </p>
+          
+          <form id="newsletter-form" class="newsletter-form">
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Your email address" required>
+              <button type="submit" aria-label="Subscribe">
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+            <p class="success-message">Thank you for subscribing!</p>
+            <p class="privacy-note">
+              By subscribing, you agree to our Privacy Policy and consent to receive updates from our company.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>STreeT wear</h3>
+          <p>
+            Redefining modern elegance through timeless design. Premium clothing for the discerning individual.
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" aria-label="Youtube">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Best Sellers</a></li>
+            <li><a href="#">Sale</a></li>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Accessories</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Help</h4>
+          <ul>
+            <li><a href="#">Customer Service</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+            <li><a href="#">Shipping Information</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> LUXE. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
